@@ -1,6 +1,108 @@
-header {
-  display: flex;
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i|Libre+Franklin:700,700i&display=swap');
+
+* {
+  box-sizing: border-box;
 }
-header img {
-  max-width: 240px;
+
+html, body {
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+}
+body {
+  padding: 1em;
+}
+
+h1, h2, h3 {
+  font-style: italic;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.about {
+  font-size: 1.5em;
+}
+
+.status {
+  font-style: italic;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section {
+  margin: 5em 0;
+}
+
+.projects img {
+  max-width: 140px;
+  margin-right: 1em;
+}
+.projects li {
+  display: flex;
+  margin-bottom: 2em;
+}
+.projects h3 {
+  margin-top: 0;
+}
+
+.thanks h2 {
+  margin-bottom: 0;
+}
+.thanks-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thanks-grid > div {
+  flex-basis: 50%;
+}
+.thanks h3 {
+  border-bottom: 1px solid black;
+  margin-right: 1em;
+}
+
+.detailed h4 {
+  margin: 0;
+}
+.who {
+  font-style: italic;
+}
+.detailed li {
+  margin-bottom: 1em;
+}
+
+.previously ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.previously li {
+  flex-basis: 24%;
+}
+.previously img {
+  max-width: 100%;
+}
+.previously h4 {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 520px) {
+  .thanks-grid > div {
+    flex-basis: 100%;
+  }
+  .previously li {
+    flex-basis: 49%;
+  }
+  .projects li {
+    display: block;
+  }
+  .projects img {
+    display: block;
+    margin: 0 auto 1em auto;
+  }
+  .projects h3 {
+    text-align: center;
+  }
 }
