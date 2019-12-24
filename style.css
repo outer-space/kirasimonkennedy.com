@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i|Libre+Franklin:700,700i&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -13,9 +14,13 @@ body {
   padding: 1em;
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-style: italic;
   font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+  font-family: 'Comfortaa', sans-serif;
 }
 
 .about {
@@ -30,6 +35,10 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+a, a:visited {
+  color: teal;
 }
 
 section {
